@@ -19,7 +19,5 @@ class EntityManagerConfiguration(
             (localContainerEntityManagerFactoryBean.jpaDialect as HibernateJpaDialect)
                 .setPrepareConnection(false)
         }
-        localContainerEntityManagerFactoryBean
-            .jpaPropertyMap["hibernate.connection.provider_disables_autocommit"] = "true"
     }
 }
