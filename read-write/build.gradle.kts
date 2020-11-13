@@ -31,12 +31,6 @@ dependencies {
 
     implementation("io.springfox:springfox-swagger2:$swaggerVersion")
     implementation("io.springfox:springfox-swagger-ui:$swaggerVersion")
-
-    implementation("net.ttddyy:datasource-proxy:1.7")
-
-    testImplementation("org.springframework.boot:spring-boot-starter-test") {
-        exclude(group = "org.junit.vintage", module = "junit-vintage-engine")
-    }
 }
 
 tasks.withType<Test> {

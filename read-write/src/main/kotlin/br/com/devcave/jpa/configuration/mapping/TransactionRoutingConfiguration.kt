@@ -3,7 +3,6 @@ package br.com.devcave.jpa.configuration.mapping
 import br.com.devcave.jpa.configuration.DataSourceListProperties
 import br.com.devcave.jpa.configuration.DataSourceProperties
 import br.com.devcave.jpa.configuration.DataSourceType
-import br.com.devcave.jpa.configuration.TransactionRoutingDataSource
 import com.zaxxer.hikari.HikariConfig
 import com.zaxxer.hikari.HikariDataSource
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty

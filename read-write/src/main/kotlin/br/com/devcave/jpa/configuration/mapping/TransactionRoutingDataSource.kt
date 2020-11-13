@@ -1,5 +1,6 @@
-package br.com.devcave.jpa.configuration
+package br.com.devcave.jpa.configuration.mapping
 
+import br.com.devcave.jpa.configuration.DataSourceType
 import org.springframework.jdbc.datasource.lookup.AbstractRoutingDataSource
 import org.springframework.transaction.support.TransactionSynchronizationManager
 
@@ -13,7 +14,3 @@ class TransactionRoutingDataSource : AbstractRoutingDataSource() {
     }
 }
 
-enum class DataSourceType {
-    READ_ONLY,
-    READ_WRITE
-}
