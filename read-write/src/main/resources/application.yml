@@ -1,0 +1,36 @@
+server:
+  port: 1980
+spring:
+  application:
+    name: transaction-routing
+  datasource:
+    hikari:
+      auto-commit: false
+  write-datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/transaction_routing_write
+    username: postgres
+    password: postgres
+  read-datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/transaction_routing_read
+    username: postgres
+    password: postgres
+  jpa:
+    show-sql: true
+    open-in-view: false
+    properties:
+      hibernate:
+#        connection:
+#          provider_disables_autocommit: true
+        jdbc:
+          lob:
+            non_contextual_creation: true
+        temp:
+          use_jdbc_metadata_defaults: false
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+
+transaction-routing:
+  implementation: aop
