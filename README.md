@@ -1,6 +1,7 @@
 # Transactional Routing
 
-TBD: Link to medium
+This repo is used with medium post:
+- https://medium.com/dev-cave/spring-data-com-banco-dedicado-para-leitura-317869a6d424
 
 
 ## References
